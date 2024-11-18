@@ -104,6 +104,7 @@ const Header: React.FC<HeaderProps> = ({
             width: "100%",
             maxWidth: "1200px",
             flexWrap: "wrap",
+            backgroundColor: "#ffffff",
           }}
         >
           <Button
