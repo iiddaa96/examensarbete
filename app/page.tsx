@@ -1,20 +1,5 @@
-import { Button, Container, Typography } from "@mui/material";
-import Link from "next/link";
+import Products from "./products/page";
 
 export default function HomePage() {
-  return (
-    <Container>
-      <Typography variant="h3" gutterBottom>
-        Välkommen till vår butik!
-      </Typography>
-      <Typography variant="body1">
-        Utforska våra produkter och hitta dina favoriter.
-      </Typography>
-      <Link href="/products" passHref>
-        <Button variant="contained" color="primary">
-          Se Produkter
-        </Button>
-      </Link>
-    </Container>
-  );
+  return <Products />;
 }

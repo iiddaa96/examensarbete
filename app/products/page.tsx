@@ -1,4 +1,5 @@
 import {
+  Box,
   Card,
   CardContent,
   CardMedia,
@@ -31,10 +32,13 @@ export default async function ProductsPage() {
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom>
-        Produkter
-      </Typography>
-      <Grid container spacing={4}>
+      <Box
+        display="flex"
+        flexDirection="row"
+        alignItems="center"
+        gap="30px"
+        padding="4rem"
+      >
         {products.length > 0 ? (
           products.map((product) => (
             <Grid item xs={12} sm={6} md={4} key={product.id}>
@@ -61,7 +65,7 @@ export default async function ProductsPage() {
         ) : (
           <Typography variant="body1">Inga produkter tillgängliga</Typography>
         )}
-      </Grid>
+      </Box>
     </Container>
   );
 }
