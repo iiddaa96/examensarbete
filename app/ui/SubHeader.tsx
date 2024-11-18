@@ -17,7 +17,8 @@ const Subheader: React.FC = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "center",
+          gap: "20px",
           width: "100%",
           maxWidth: "1200px",
           flexWrap: "wrap",
