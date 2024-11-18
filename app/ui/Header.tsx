@@ -36,12 +36,35 @@ const Header: React.FC<HeaderProps> = ({
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center", // Detta centrerar innehållet horisontellt
+          alignItems: "center",
           width: "100%",
         }}
       >
-        {/* Centrerad logotyp/titel */}
-        <Box component={Link} href="/" sx={{ textDecoration: "none" }}>
+        {/* Hamburger menu (visible only on mobile) */}
+        <Box sx={{ display: { xs: "flex", md: "none" }, alignItems: "center" }}>
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+            color="inherit"
+          >
+            <MenuIcon />
+          </IconButton>
+        </Box>
+
+        {/* Logo (centered on mobile, and positioned correctly on desktop) */}
+        <Box
+          component={Link}
+          href="/"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexGrow: { xs: "0.9", sm: "1" },
+            textDecoration: "none",
+          }}
+        >
           <Typography
             variant="h6"
             noWrap
@@ -52,26 +75,11 @@ const Header: React.FC<HeaderProps> = ({
               letterSpacing: ".3rem",
               color: "black",
               textDecoration: "none",
-              padding: "10px",
             }}
           >
             LUXE
           </Typography>
         </Box>
-      </Box>
-
-      {/* Mobil Menu Knapp */}
-      <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="menu-appbar"
-          aria-haspopup="true"
-          onClick={handleOpenNavMenu}
-          color="inherit"
-        >
-          <MenuIcon />
-        </IconButton>
       </Box>
 
       {/* Mobil meny */}
