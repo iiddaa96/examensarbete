@@ -26,7 +26,6 @@ const Header: React.FC<HeaderProps> = ({
       component="header"
       sx={{
         backgroundColor: "#ffffff",
-        borderBottom: "1px solid black",
         marginTop: "20px",
         paddingBottom: "20px",
         boxShadow: "none",
