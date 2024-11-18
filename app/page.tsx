@@ -7,7 +7,7 @@ export default function HomePage() {
       <Typography variant="h3" gutterBottom>
         Välkommen till vår butik!
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="body1">
         Utforska våra produkter och hitta dina favoriter.
       </Typography>
       <Link href="/products" passHref>
