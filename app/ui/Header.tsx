@@ -1,4 +1,3 @@
-// components/Header.tsx
 "use client";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button } from "@mui/material";
@@ -28,35 +27,20 @@ const Header: React.FC<HeaderProps> = ({
       sx={{
         backgroundColor: "#ffffff",
         borderBottom: "1px solid black",
+        marginTop: "20px",
+        paddingBottom: "20px",
         boxShadow: "none",
         color: "black",
       }}
     >
       <Box
-        component={Link}
-        href="/"
         sx={{
-          display: { xs: "none", md: "inline-block" },
-          overflow: "hidden",
-          marginRight: "30rem",
+          display: "flex",
+          justifyContent: "center", // Detta centrerar innehållet horisontellt
+          width: "100%",
         }}
       >
-        LUXE
-      </Box>
-
-      {/* Mobil Menu Knapp */}
-      <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="menu-appbar"
-          aria-haspopup="true"
-          onClick={handleOpenNavMenu}
-          color="inherit"
-        >
-          <MenuIcon />
-        </IconButton>
-        {/* Mobil Logo */}
+        {/* Centrerad logotyp/titel */}
         <Box component={Link} href="/" sx={{ textDecoration: "none" }}>
           <Typography
             variant="h6"
@@ -71,10 +55,25 @@ const Header: React.FC<HeaderProps> = ({
               padding: "10px",
             }}
           >
-            Hejsan
+            LUXE
           </Typography>
         </Box>
       </Box>
+
+      {/* Mobil Menu Knapp */}
+      <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+        <IconButton
+          size="large"
+          aria-label="account of current user"
+          aria-controls="menu-appbar"
+          aria-haspopup="true"
+          onClick={handleOpenNavMenu}
+          color="inherit"
+        >
+          <MenuIcon />
+        </IconButton>
+      </Box>
+
       {/* Mobil meny */}
       <Menu
         id="menu-appbar"
