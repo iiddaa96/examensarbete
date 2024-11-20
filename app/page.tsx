@@ -75,6 +75,10 @@ export default async function Home() {
                 <Card
                   sx={{
                     maxWidth: 345,
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
                     m: "auto",
                     boxShadow: 3,
                     position: "relative",
@@ -83,7 +87,7 @@ export default async function Home() {
                   <CardMedia
                     component="img"
                     width="auto"
-                    height="280"
+                    height="200"
                     image={product.images[0].url}
                     alt={product.title}
                   />
