@@ -1,4 +1,5 @@
 "use client";
+import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
@@ -37,6 +38,7 @@ const Header: React.FC<HeaderProps> = ({
           display: "flex",
           alignItems: "center",
           width: "100%",
+          justifyContent: "space-between",
         }}
       >
         {/* Hamburger menu (visible only on mobile) */}
@@ -62,6 +64,10 @@ const Header: React.FC<HeaderProps> = ({
             justifyContent: "center",
             flexGrow: { xs: "0.9", sm: "1" },
             textDecoration: "none",
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)",
+            marginTop: "1rem",
           }}
         >
           <Typography
@@ -78,6 +84,9 @@ const Header: React.FC<HeaderProps> = ({
           >
             LUXE
           </Typography>
+        </Box>
+        <Box sx={{ position: "absolute", right: "2rem", top: "2rem" }}>
+          <AddShoppingCartOutlinedIcon />
         </Box>
       </Box>
 
