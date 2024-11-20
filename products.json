@@ -4,71 +4,32 @@
     "title": "BeautyAct - To Go Eyeshadow Palette",
     "content": "Contains nine richly pigmented eyeshadows in matte, shimmering, and sparkling shades. The eyeshadows can be used separately or blended to create your own custom look. The formula, which is extremely easy to blend, is effortless to work with and lasts from morning to evening. 100% Vegan and made in Italy. BeautyAct delivers skincare-infused and multifunctional makeup designed for an active lifestyle. The Bare To Go Eyeshadow Palette contains nine richly pigmented eyeshadows in matte, shimmering, and sparkling shades.",
     "price": 399.0,
-    "stock": 50,
-    "images": [
-      {
-        "id": "img1",
-        "url": "https://www.kicks.se/globalassets/integrationimages/7310641666712-1.jpg?ref=973681&hasAlpha=false&w=960&preset=background",
-        "alt": "Framsidan av Produkt 1"
-      },
-      {
-        "id": "img2",
-        "url": "https://www.kicks.se/globalassets/integrationimages/bare-to-go-eyeshadow-palette.jpg?ref=981141&hasAlpha=false&w=960&preset=background",
-        "alt": "Sidan av Produkt 1"
-      },
-      {
-        "id": "img3",
-        "url": "https://www.kicks.se/globalassets/integrationimages/bare-to-go-eyeshadow.jpg?ref=974780&hasAlpha=false&w=960&preset=background",
-        "alt": "Baksidan av Produkt 1"
-      }
-    ]
+    "images": {
+      "id": "img1",
+      "url": "https://www.kicks.se/globalassets/integrationimages/7310641666712-1.jpg?ref=973681&hasAlpha=false&w=960&preset=background",
+      "alt": "Framsidan av Produkt 1"
+    }
   },
   {
     "id": "2",
     "title": "Morphe - Neutral Artistry Palette",
     "content": "Switch up to these neutral shades that are easy to apply and use. These stunning shades can be mixed and matched, so you'll always create a beautiful look. SHADES (row 1): Bare Play, Make a Deal, Straight Up (row 2): Midi, Pact, Promise (row 3): Halfway, Open Mind, Win-Win.",
     "price": 199.99,
-    "stock": 20,
-    "images": [
-      {
-        "id": "img1",
-        "url": "https://www.kicks.se/globalassets/integrationimages/192608231679.jpg?ref=1010609&hasAlpha=false&w=960&preset=background",
-        "alt": "Framsidan av Produkt 2"
-      },
-      {
-        "id": "img2",
-        "url": "https://www.kicks.se/globalassets/integrationimages/192608231679-2.jpg?ref=1010610&hasAlpha=false&w=960&preset=background",
-        "alt": "Sidan av Produkt 2"
-      },
-      {
-        "id": "img3",
-        "url": "https://plus.unsplash.com/premium_photo-1702902232929-d85dd78030df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "alt": "Baksidan av Produkt 2"
-      }
-    ]
+    "images": {
+      "id": "img1",
+      "url": "https://www.kicks.se/globalassets/integrationimages/192608231679.jpg?ref=1010609&hasAlpha=false&w=960&preset=background",
+      "alt": "Framsidan av Produkt 2"
+    }
   },
   {
     "id": "3",
     "title": "Yves Saint Laurent - Shine Lipstick",
     "content": "YSL LOVESHINE is a high-gloss lipstick that gives lips a wet look. The moisturizing and nourishing formula leaves your lips feeling cared for and protected. Easy to apply, it glides smoothly on the lips. Apply multiple layers for more gloss and color. Experience our unique transforming and melting formula – from lipstick to high-gloss lip oil. Treat yourself to delicious colors that are easy to build, from delicate semi-transparent to eye-catching, high-gloss lips! Discover the upgraded formula of the iconic Rouge Volupté Shine in a new silver packaging. The nourishing formula keeps your lips feeling hydrated, cared for, and protected.",
     "price": 349.99,
-    "stock": 35,
-    "images": [
-      {
-        "id": "img1",
-        "url": "https://www.kicks.se/globalassets/integrationimages/3614274132625-5.jpg?ref=2980630&hasAlpha=false&w=960&preset=background",
-        "alt": "Framsidan av Produkt 3"
-      },
-      {
-        "id": "img2",
-        "url": "https://www.kicks.se/globalassets/integrationimages/3614274132625-3.jpg?ref=2980628&hasAlpha=false&w=960&preset=background",
-        "alt": "Sidan av Produkt 3"
-      },
-      {
-        "id": "img3",
-        "url": "https://www.kicks.se/globalassets/integrationimages/3614274132625-4.jpg?ref=2980629&hasAlpha=false&w=960&preset=background",
-        "alt": "Baksidan av Produkt 3"
-      }
-    ]
+    "images": {
+      "id": "img1",
+      "url": "https://www.kicks.se/globalassets/integrationimages/3614274132625-5.jpg?ref=2980630&hasAlpha=false&w=960&preset=background",
+      "alt": "Framsidan av Produkt 3"
+    }
   }
 ]

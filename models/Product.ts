@@ -1,37 +1,32 @@
-import mongoose, { Document, Schema } from "mongoose";
+import mongoose, { Document, Model, Schema } from "mongoose";
 
-// Definiera TypeScript-typen för produktens data
-export interface IProduct extends Document {
-  id: string;
+// Typdefinition för bild
+interface Image {
+  url: string;
+  alt: string;
+}
+
+// Typdefinition för produkt
+interface Product extends Document {
   title: string;
   content: string;
   price: number;
-  stock: number;
-  images: {
-    id: string;
-    url: string;
-    alt: string;
-  }[];
+  images: Image;
 }
 
 // Definiera Mongoose-schema för en produkt
-const productSchema = new Schema<IProduct>({
-  id: { type: String, required: true },
+const productSchema = new Schema<Product>({
   title: { type: String, required: true },
   content: { type: String, required: true },
   price: { type: Number, required: true },
-  stock: { type: Number, required: true },
-  images: [
-    {
-      id: { type: String, required: true },
-      url: { type: String, required: true },
-      alt: { type: String, required: true },
-    },
-  ],
+  images: {
+    url: { type: String, required: true },
+    alt: { type: String, required: true },
+  },
 });
 
-// En Mongoose-modell för produkten
-const Product =
-  mongoose.models.Product || mongoose.model<IProduct>("Product", productSchema);
+// Kontrollera om modellen redan är definierad
+const Product: Model<Product> =
+  mongoose.models.Product || mongoose.model<Product>("Product", productSchema);
 
 export default Product;
